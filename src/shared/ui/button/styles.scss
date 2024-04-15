@@ -1,0 +1,16 @@
+.CustomButton {
+  height: 30px;
+  padding: 10px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+
+  border: 1px #525252 solid;
+  border-radius: 5px;
+  background-color: rgb(192, 192, 192);
+
+  &:hover {
+    background-color: grey;
+  }
+}

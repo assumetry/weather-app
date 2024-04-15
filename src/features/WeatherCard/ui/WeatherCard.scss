@@ -1,0 +1,57 @@
+.WeatherCard {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__cityName {
+    padding: 0 10px;
+    width: 10%;
+  }
+
+  &__button {
+    margin-left: 10px;
+  }
+
+  &__dayList {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    list-style: none;
+  }
+
+  &__days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__dayItem {
+    width: 12.5%;
+    height: 90px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    &_odd {
+      background-color: gainsboro;
+    }
+
+    &_even {
+      background-color: darkkhaki;
+    }
+  }
+
+  &__dayInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dayIcon {
+    width: 40px;
+    height: 40px;
+  }
+}

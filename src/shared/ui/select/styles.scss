@@ -1,0 +1,60 @@
+.CustomSelect {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  &__input {
+    height: 8px;
+    width: calc(100% - 12px);
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+
+    border: 1px #525252 solid;
+    border-radius: 5px;
+    background-color: rgb(192, 192, 192);
+
+    &_isOpen {
+      border-radius: 5px 5px 0 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 30px;
+    width: calc(100% - 2px);
+
+    background-color: rgb(192, 192, 192);
+    border-left: 1px #525252 solid;
+    border-right: 1px #525252 solid;
+    border-bottom: 1px #525252 solid;
+    border-radius: 0 0 5px 5px;
+
+    &_closed {
+      visibility: hidden;
+    }
+  }
+
+  &__dropdownOption {
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px #525252 solid;
+    height: 9px;
+    padding: 10px 5px;
+
+    &:hover {
+      background-color: grey;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+}

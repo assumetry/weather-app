@@ -1,0 +1,18 @@
+body {
+  @font-face {
+    font-family: "MyFont";
+    src: local("MyFont"), url("../src/shared/assets/fonts/OpenSans-Medium.ttf"),
+      format("ttf");
+  }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: thistle;
+  font-family: "myFont";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,15 @@
+.CitySelection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &__button {
+    margin-left: 5px;
+  }
+
+  &__select {
+    display: flex;
+    width: 100%;
+  }
+}
